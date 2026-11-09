@@ -85,6 +85,10 @@ print(text.decode("utf-8"))
 | `stego/steg_views.py` | карти стегоаналізу для візуалізації |
 | `example.py` | приклад командного рядка |
 
+## Ліцензія
+
+MIT. Повний текст у файлі [LICENSE](LICENSE). Автор: Raimex Team, Подгорський Костянтин Олександрович.
+
 ## Обмеження
 
 - Контейнер має бути без втрат (PNG) або зображенням, яке не буде стискатися повторно. Перекодування в JPEG руйнує приховані біти.
@@ -97,4 +101,4 @@ print(text.decode("utf-8"))
 
 **Chunky** is a Python library for adaptive image steganography. It splits an image into square chunks, estimates the noise of each chunk (pixel vs. prediction from its four neighbours) and writes the hidden bits into the noisiest chunks first, so changes are masked by natural noise. Two versions are included: `SChunky` (reference) and `ChunkyV1.1` (LSB matching with ±1 changes toward lower noise and a built-in self-check). Use lossless containers (PNG); JPEG re-compression destroys the payload. Everything runs offline. Web UI: https://vn.raimex.space
 
-Authors: Raimex Team, Kostiantyn Podhorskyi.
+Authors: Raimex Team, Kostiantyn Podhorskyi. License: MIT.
